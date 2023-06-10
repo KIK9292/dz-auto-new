@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dz-auto-new/static/css/main.f186b0ce.css",
-    "main.js": "/dz-auto-new/static/js/main.d7a6424d.js",
+    "main.css": "/dz-auto-new/static/css/main.1cba7fe2.css",
+    "main.js": "/dz-auto-new/static/js/main.7575e418.js",
     "static/js/787.66cb4309.chunk.js": "/dz-auto-new/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/dz-auto-new/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/404.svg": "/dz-auto-new/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
@@ -10,12 +10,12 @@
     "static/media/checked.svg": "/dz-auto-new/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/dz-auto-new/index.html",
     "static/media/burger.svg": "/dz-auto-new/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.f186b0ce.css.map": "/dz-auto-new/static/css/main.f186b0ce.css.map",
-    "main.d7a6424d.js.map": "/dz-auto-new/static/js/main.d7a6424d.js.map",
+    "main.1cba7fe2.css.map": "/dz-auto-new/static/css/main.1cba7fe2.css.map",
+    "main.7575e418.js.map": "/dz-auto-new/static/js/main.7575e418.js.map",
     "787.66cb4309.chunk.js.map": "/dz-auto-new/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f186b0ce.css",
-    "static/js/main.d7a6424d.js"
+    "static/css/main.1cba7fe2.css",
+    "static/js/main.7575e418.js"
   ]
 }
