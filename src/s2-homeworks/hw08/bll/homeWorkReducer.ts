@@ -8,8 +8,9 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
 
     switch (action.type) {
         case 'sort': {
+            let statenew=state
             if (action.payload === "up") {
-                state.sort(function (a, b) {
+                 statenew=state.slice().sort(function (a, b) {
                     let nameA = a.name
                     let nameB = b.name
                     if (nameA < nameB) {
@@ -22,7 +23,7 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
                 })
             }
             else if (action.payload === "down"){
-                state.sort(function (b, a) {
+                statenew= state.slice().sort(function (b, a) {
                     let nameA = a.name
                     let nameB = b.name
                     if (nameA < nameB) {
@@ -35,7 +36,7 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
                 })
             }
 
-            return [...state]
+            return statenew
         }
         case 'check': {
 
