@@ -36,25 +36,31 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
-                setText('...всё ок)')
-                setInfo('')
+                setText(res.data.errorText)
+                setInfo(res.data.info)
             })
             .catch((e) => {
-                if(x===null){
-                    setCode('Error!')
-                    setImage(errorUnknown)
-                    setText('Network Error AxiosError')
-                    setInfo('')
-                }else if( x===false){
-                    setCode('500')
-                    setImage(error400)
-                    setText('Ты не отправил success в body вообще! ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!')
-                    setInfo('')
-                }else{
-                    setCode('400')
-                    setImage(error500)
-                    setText('эмитация ошибки на сервере ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)')
-                    setInfo('')
+                switch (e.response.status) {
+                    case 500:
+                        setImage(error500)
+                        setCode(e.response.status)
+                        setText(e.response.data.errorText)
+                        console.log(e.response.data.errorText)
+                        setInfo(e.response.data.info)
+                        break;
+                    case 400:
+                        setImage(error400)
+                        setCode(e.response.status)
+                        setText(e.response.data.errorText)
+                        console.log(e.response.data.errorText)
+                        setInfo(e.response.data.info)
+                        break;
+                    default:
+                        setImage(errorUnknown)
+                        setCode('Error')
+                        setText(e.message)
+                        setInfo(e.name)
+                        break;
                 }
 
             })
@@ -70,7 +76,7 @@ const HW13 = () => {
                         id={'hw13-send-true'}
                         onClick={send(true)}
                         xType={'secondary'}
-                        disabled={info!==""}
+                        disabled={info==='...loading'}
 
                     >
                         Send true
@@ -79,7 +85,7 @@ const HW13 = () => {
                         id={'hw13-send-false'}
                         onClick={send(false)}
                         xType={'secondary'}
-                        disabled={info!==""}
+                        disabled={info==='...loading'}
 
                     >
                         Send false
@@ -88,7 +94,7 @@ const HW13 = () => {
                         id={'hw13-send-undefined'}
                         onClick={send(undefined)}
                         xType={'secondary'}
-                        disabled={info!==""}
+                        disabled={info==='...loading'}
 
                     >
                         Send undefined
@@ -97,7 +103,7 @@ const HW13 = () => {
                         id={'hw13-send-null'}
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
-                        disabled={info!==""}
+                        disabled={info==='...loading'}
 
                     >
                         Send null
