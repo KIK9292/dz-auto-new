@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dz-auto-new/static/css/main.b232d89c.css",
-    "main.js": "/dz-auto-new/static/js/main.3d4ca01a.js",
+    "main.js": "/dz-auto-new/static/js/main.b962b011.js",
     "static/js/787.66cb4309.chunk.js": "/dz-auto-new/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/dz-auto-new/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/200.svg": "/dz-auto-new/static/media/200.96248f7df0dde10e0a82ac30418f50bc.svg",
@@ -15,11 +15,11 @@
     "index.html": "/dz-auto-new/index.html",
     "static/media/burger.svg": "/dz-auto-new/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
     "main.b232d89c.css.map": "/dz-auto-new/static/css/main.b232d89c.css.map",
-    "main.3d4ca01a.js.map": "/dz-auto-new/static/js/main.3d4ca01a.js.map",
+    "main.b962b011.js.map": "/dz-auto-new/static/js/main.b962b011.js.map",
     "787.66cb4309.chunk.js.map": "/dz-auto-new/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b232d89c.css",
-    "static/js/main.3d4ca01a.js"
+    "static/js/main.b962b011.js"
   ]
 }
